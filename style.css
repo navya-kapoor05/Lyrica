@@ -10,8 +10,23 @@ body {
   font-family: "Urbanist", sans-serif;
   background-color: #040105;
   height: 100vh;
+  position: relative;
+}
+/*background hero-section*/
+.page-bg::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1276px;
+  height: 605px; /* your Figma values */
+  border-radius: 1276px;
+  background: #181d3f;
+  filter: blur(200.6999969482422px); /* heavy blur */
+  transform: translate(-50%, -50%);
 }
 
+/*navbar*/
 ul {
   display: flex;
   justify-items: center;
@@ -50,7 +65,7 @@ ul {
   font-family: Urbanist;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   text-transform: capitalize;
   text-decoration: none;
@@ -62,6 +77,9 @@ ul {
   max-width: 100%;
   padding: 0;
   margin: 27px 0px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-menu {
@@ -84,4 +102,115 @@ ul {
   height: 42px;
   flex-shrink: 0;
   border: 0;
+}
+
+/*hero-section*/
+.music-signal {
+  display: flex;
+  justify-content: center;
+}
+.music-signal img {
+  width: 358px;
+}
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+.hero-heading h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Rethink Sans";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.844%; /* 83.875px */
+  text-transform: capitalize;
+  padding-top: 30px;
+}
+.hero-heading p {
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 104.844%; /* 25.163px */
+  text-transform: capitalize;
+  padding-top: 22px;
+}
+.start-learning {
+  border-radius: 28px;
+  background: #00a6ff;
+  width: 171px;
+  height: 56px;
+  flex-shrink: 0;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.explore-playlists {
+  border-radius: 28px;
+  border: 1px solid #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 156px;
+  height: 56px;
+  flex-shrink: 0;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.hero-button {
+  padding-top: 41px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.hero-section {
+  height: 644px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/*section-2*/
+.section-2 {
+  padding-top: 77px;
+  display: flex;
+  justify-content: center;
+}
+
+.img1 {
+  width: 317.843px;
+  height: 221px;
+  flex-shrink: 0;
+  aspect-ratio: 128/89;
+  border-radius: 11px;
+}
+
+.img2 {
+  width: 310.141px;
+  height: 232px;
+  flex-shrink: 0;
+  aspect-ratio: 127/95;
+  border-radius: 11px;
 }
