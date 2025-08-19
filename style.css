@@ -28,10 +28,6 @@ ul {
   margin: 0px 70px 0px 170px;
 }
 
-.search:hover input {
-  width: 182px;
-}
-
 .search input {
   width: 0;
   outline: none;
@@ -39,7 +35,7 @@ ul {
   font-weight: 600;
   font-style: normal;
   font-size: 16px;
-  transition: 0.8s;
+  width: 182px;
   background: transparent;
   color: rgba(0, 0, 0, 0.3);
   line-height: normal;
